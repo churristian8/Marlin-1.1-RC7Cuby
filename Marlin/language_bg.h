@@ -24,137 +24,120 @@
  * Bulgarian
  *
  * LCD Menu Messages
- * See also https://github.com/MarlinFirmware/Marlin/wiki/LCD-Language
+ * See also http://marlinfw.org/docs/development/lcd_language.html
  *
  */
 #ifndef LANGUAGE_BG_H
 #define LANGUAGE_BG_H
 
 #define MAPPER_D0D1                // For Cyrillic
-// Define SIMULATE_ROMFONT to see what is seen on the character based display defined in Configuration.h
-//#define SIMULATE_ROMFONT
 #define DISPLAY_CHARSET_ISO10646_5
 
-#define WELCOME_MSG                         MACHINE_NAME " Ð“Ð¾Ñ‚Ð¾Ð²."
-#define MSG_SD_INSERTED                     "ÐšÐ°Ñ€Ñ‚Ð°Ñ‚Ð° Ðµ Ð¿Ð¾Ñ�Ñ‚Ð°Ð²ÐµÐ½Ð°"
-#define MSG_SD_REMOVED                      "ÐšÐ°Ñ€Ñ‚Ð°Ñ‚Ð° Ðµ Ð¸Ð·Ð²Ð°Ð´ÐµÐ½Ð°"
-#define MSG_MAIN                            "ÐœÐµÐ½ÑŽ"
-#define MSG_AUTOSTART                       "Ð�Ð²Ñ‚Ð¾Ñ�Ñ‚Ð°Ñ€Ñ‚"
-#define MSG_DISABLE_STEPPERS                "Ð˜Ð·ÐºÐ». Ð´Ð²Ð¸Ð³Ð°Ñ‚ÐµÐ»Ð¸"
-#define MSG_AUTO_HOME                       "ÐŸÐ°Ñ€ÐºÐ¸Ñ€Ð°Ð½Ðµ"
-#define MSG_LEVEL_BED_HOMING                "Homing XYZ"
-#define MSG_LEVEL_BED_WAITING               "Click to Begin"
-#define MSG_LEVEL_BED_DONE                  "Leveling Done!"
-#define MSG_LEVEL_BED_CANCEL                "Cancel"
-#define MSG_SET_HOME_OFFSETS                "Ð—Ð°Ð´Ð°Ð¹ Ð�Ð°Ñ‡Ð°Ð»Ð¾"
-#define MSG_HOME_OFFSETS_APPLIED            "Offsets applied"
-#define MSG_SET_ORIGIN                      "Ð˜Ð·Ñ…Ð¾Ð´Ð½Ð° Ñ‚Ð¾Ñ‡ÐºÐ°"
-#define MSG_PREHEAT_1                       "ÐŸÐ¾Ð´Ð³Ñ€Ñ�Ð²Ð°Ð½Ðµ PLA"
-#define MSG_PREHEAT_1_N                     "ÐŸÐ¾Ð´Ð³Ñ€Ñ�Ð²Ð°Ð½Ðµ PLA"
-#define MSG_PREHEAT_1_ALL                   "ÐŸÐ¾Ð´Ð³Ñ€. PLA Ð’Ñ�Ð¸Ñ‡ÐºÐ¸"
-#define MSG_PREHEAT_1_BEDONLY               "ÐŸÐ¾Ð´Ð³Ñ€. PLA Ð›ÐµÐ³Ð»Ð¾"
-#define MSG_PREHEAT_1_SETTINGS              "Ð�Ð°Ñ�Ñ‚Ñ€Ð¾Ð¹ÐºÐ¸ PLA"
-#define MSG_PREHEAT_2                       "ÐŸÐ¾Ð´Ð³Ñ€Ñ�Ð²Ð°Ð½Ðµ ABS"
-#define MSG_PREHEAT_2_N                     "ÐŸÐ¾Ð´Ð³Ñ€Ñ�Ð²Ð°Ð½Ðµ ABS"
-#define MSG_PREHEAT_2_ALL                   "ÐŸÐ¾Ð´Ð³Ñ€. ABS Ð’Ñ�Ð¸Ñ‡ÐºÐ¸"
-#define MSG_PREHEAT_2_BEDONLY               "ÐŸÐ¾Ð´Ð³Ñ€. ABS Ð›ÐµÐ³Ð»Ð¾"
-#define MSG_PREHEAT_2_SETTINGS              "Ð�Ð°Ñ�Ñ‚Ñ€Ð¾Ð¹ÐºÐ¸ ABS"
-#define MSG_COOLDOWN                        "ÐžÑ…Ð»Ð°Ð¶Ð´Ð°Ð½Ðµ"
-#define MSG_SWITCH_PS_ON                    "Ð’ÐºÐ». Ð·Ð°Ñ…Ñ€Ð°Ð½Ð²Ð°Ð½Ðµ"
-#define MSG_SWITCH_PS_OFF                   "Ð˜Ð·ÐºÐ». Ð·Ð°Ñ…Ñ€Ð°Ð½Ð²Ð°Ð½Ðµ"
-#define MSG_EXTRUDE                         "Ð•ÐºÑ�Ñ‚Ñ€ÑƒÐ·Ð¸Ñ�"
-#define MSG_RETRACT                         "ÐžÑ‚ÐºÐ°Ñ‚"
-#define MSG_MOVE_AXIS                       "Ð”Ð²Ð¸Ð¶ÐµÐ½Ð¸Ðµ Ð¿Ð¾ Ð¾Ñ�"
-#define MSG_LEVEL_BED                       "Ð�Ð¸Ð²ÐµÐ»Ð¸Ñ€Ð°Ð½Ðµ"
-#define MSG_MOVE_X                          "Ð”Ð²Ð¸Ð¶ÐµÐ½Ð¸Ðµ Ð¿Ð¾ X"
-#define MSG_MOVE_Y                          "Ð”Ð²Ð¸Ð¶ÐµÐ½Ð¸Ðµ Ð¿Ð¾ Y"
-#define MSG_MOVE_Z                          "Ð”Ð²Ð¸Ð¶ÐµÐ½Ð¸Ðµ Ð¿Ð¾ Z"
-#define MSG_MOVE_E                          "Ð•ÐºÑ�Ñ‚Ñ€ÑƒÐ´ÐµÑ€"
-#define MSG_MOVE_01MM                       "ÐŸÑ€ÐµÐ¼ÐµÑ�Ñ‚Ð¸ Ñ� 0.1mm"
-#define MSG_MOVE_1MM                        "ÐŸÑ€ÐµÐ¼ÐµÑ�Ñ‚Ð¸ Ñ� 1mm"
-#define MSG_MOVE_10MM                       "ÐŸÑ€ÐµÐ¼ÐµÑ�Ñ‚Ð¸ Ñ� 10mm"
-#define MSG_SPEED                           "Ð¡ÐºÐ¾Ñ€Ð¾Ñ�Ñ‚"
-#define MSG_NOZZLE                          LCD_STR_THERMOMETER " Ð”ÑŽÐ·Ð°"
-#define MSG_BED                             LCD_STR_THERMOMETER " Ð›ÐµÐ³Ð»Ð¾"
-#define MSG_FAN_SPEED                       "Ð’ÐµÐ½Ñ‚Ð¸Ð»Ð°Ñ‚Ð¾Ñ€"
-#define MSG_FLOW                            "ÐŸÐ¾Ñ‚Ð¾Ðº"
-#define MSG_CONTROL                         "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ"
-#define MSG_MIN                             LCD_STR_THERMOMETER " ÐœÐ¸Ð½Ð¸Ð¼ÑƒÐ¼"
-#define MSG_MAX                             LCD_STR_THERMOMETER " ÐœÐ°ÐºÑ�Ð¸Ð¼ÑƒÐ¼"
-#define MSG_FACTOR                          LCD_STR_THERMOMETER " Ð¤Ð°ÐºÑ‚Ð¾Ñ€"
-#define MSG_AUTOTEMP                        "Ð�Ð²Ñ‚Ð¾-Ñ‚ÐµÐ¼Ð¿."
-#define MSG_ON                              "Ð’ÐºÐ». "
-#define MSG_OFF                             "Ð˜Ð·ÐºÐ». "
-#define MSG_PID_P                           "PID-P"
-#define MSG_PID_I                           "PID-I"
-#define MSG_PID_D                           "PID-D"
-#define MSG_PID_C                           "PID-C"
-#define MSG_ACC                             "Acc"
-#define MSG_VXY_JERK                        "Vxy-jerk"
-#define MSG_VZ_JERK                         "Vz-jerk"
-#define MSG_VE_JERK                         "Ve-jerk"
-#define MSG_VMAX                            "Vmax "
-#define MSG_X                               "X"
-#define MSG_Y                               "Y"
-#define MSG_Z                               "Z"
-#define MSG_E                               "E"
-#define MSG_VMIN                            "Vmin"
-#define MSG_VTRAV_MIN                       "VTrav min"
-#define MSG_AMAX                            "Amax "
-#define MSG_A_RETRACT                       "A-Ð¾Ñ‚ÐºÐ°Ñ‚"
-#define MSG_XSTEPS                          "X Ñ�Ñ‚ÑŠÐ¿ÐºÐ¸/mm"
-#define MSG_YSTEPS                          "Y Ñ�Ñ‚ÑŠÐ¿ÐºÐ¸/mm"
-#define MSG_ZSTEPS                          "Z Ñ�Ñ‚ÑŠÐ¿ÐºÐ¸/mm"
-#define MSG_ESTEPS                          "E Ñ�Ñ‚ÑŠÐ¿ÐºÐ¸/mm"
-#define MSG_TEMPERATURE                     "Ð¢ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð°"
-#define MSG_MOTION                          "Ð”Ð²Ð¸Ð¶ÐµÐ½Ð¸Ðµ"
-#define MSG_VOLUMETRIC                      "Ð�Ð¸ÑˆÐºÐ°"
-#define MSG_VOLUMETRIC_ENABLED              "E in mm3"
-#define MSG_FILAMENT_DIAM                   "Ð”Ð¸Ð°Ð¼. Ð½Ð¸ÑˆÐºÐ°"
-#define MSG_CONTRAST                        "LCD ÐºÐ¾Ð½Ñ‚Ñ€Ð°Ñ�Ñ‚"
-#define MSG_STORE_EPROM                     "Ð—Ð°Ð¿Ð°Ð·Ð¸ Ð² EPROM"
-#define MSG_LOAD_EPROM                      "Ð—Ð°Ñ€ÐµÐ´Ð¸ Ð¾Ñ‚ EPROM"
-#define MSG_RESTORE_FAILSAFE                "Ð¤Ð°Ð±Ñ€Ð¸Ñ‡Ð½Ð¸ Ð½Ð°Ñ�Ñ‚Ñ€Ð¾Ð¹ÐºÐ¸"
-#define MSG_REFRESH                         LCD_STR_REFRESH "ÐžÐ±Ð½Ð¾Ð²Ð¸"
-#define MSG_WATCH                           "ÐŸÑ€ÐµÐ³Ð»ÐµÐ´"
-#define MSG_PREPARE                         "Ð”ÐµÐ¹Ñ�Ñ‚Ð²Ð¸Ñ�"
-#define MSG_TUNE                            "Ð�Ð°Ñ�Ñ‚Ñ€Ð¾Ð¹ÐºÐ°"
-#define MSG_PAUSE_PRINT                     "ÐŸÐ°ÑƒÐ·Ð°"
-#define MSG_RESUME_PRINT                    "Ð’ÑŠÐ·Ð¾Ð±Ð½Ð¾Ð²Ð¸ Ð¿ÐµÑ‡Ð°Ñ‚Ð°"
-#define MSG_STOP_PRINT                      "Ð¡Ð¿Ñ€Ð¸ Ð¿ÐµÑ‡Ð°Ñ‚Ð°"
-#define MSG_CARD_MENU                       "ÐœÐµÐ½ÑŽ ÐºÐ°Ñ€Ñ‚Ð°"
-#define MSG_NO_CARD                         "Ð�Ñ�Ð¼Ð° ÐºÐ°Ñ€Ñ‚Ð°"
-#define MSG_DWELL                           "ÐŸÐ¾Ñ‡Ð¸Ð²ÐºÐ°..."
-#define MSG_USERWAIT                        "Ð˜Ð·Ñ‡Ð°ÐºÐ²Ð°Ð½Ðµ"
-#define MSG_RESUMING                        "ÐŸÑ€Ð¾Ð´ÑŠÐ»Ð¶. Ð¿ÐµÑ‡Ð°Ñ‚Ð°"
-#define MSG_PRINT_ABORTED                   "ÐŸÐµÑ‡Ð°Ñ‚ÑŠÑ‚ Ðµ Ð¿Ñ€ÐµÐºÑŠÑ�Ð½Ð°Ñ‚"
-#define MSG_NO_MOVE                         "Ð�Ñ�Ð¼Ð° Ð´Ð²Ð¸Ð¶ÐµÐ½Ð¸Ðµ"
-#define MSG_KILLED                          "Ð£Ð‘Ð˜Ð¢Ðž."
-#define MSG_STOPPED                         "Ð¡ÐŸÐ Ð¯Ð�Ðž."
-#define MSG_CONTROL_RETRACT                 "ÐžÑ‚ÐºÐ°Ñ‚ mm"
-#define MSG_CONTROL_RETRACT_SWAP            "Ð¡Ð¼Ñ�Ð½Ð° ÐžÑ‚ÐºÐ°Ñ‚ mm"
-#define MSG_CONTROL_RETRACTF                "ÐžÑ‚ÐºÐ°Ñ‚  V"
-#define MSG_CONTROL_RETRACT_ZLIFT           "Ð¡ÐºÐ¾Ðº mm"
-#define MSG_CONTROL_RETRACT_RECOVER         "Ð’ÑŠÐ·Ð²Ñ€Ð°Ñ‚ +mm"
-#define MSG_CONTROL_RETRACT_RECOVER_SWAP    "Ð¡Ð¼Ñ�Ð½Ð° Ð’ÑŠÐ·Ð²Ñ€Ð°Ñ‚ +mm"
-#define MSG_CONTROL_RETRACT_RECOVERF        "Ð’ÑŠÐ·Ð²Ñ€Ð°Ñ‚  V"
-#define MSG_AUTORETRACT                     "Ð�Ð²Ñ‚Ð¾oÑ‚ÐºÐ°Ñ‚"
-#define MSG_FILAMENTCHANGE                  "Ð¡Ð¼Ñ�Ð½Ð° Ð½Ð¸ÑˆÐºÐ°"
-#define MSG_INIT_SDCARD                     "Ð˜Ð½Ð¸Ñ†. SD-ÐšÐ°Ñ€Ñ‚Ð°"
-#define MSG_CNG_SDCARD                      "Ð¡Ð¼Ñ�Ð½Ð° SD-ÐšÐ°Ñ€Ñ‚Ð°"
-#define MSG_ZPROBE_OUT                      "Z-Ñ�Ð¾Ð½Ð´Ð°Ñ‚Ð° Ðµ Ð¸Ð·Ð²Ð°Ð´ÐµÐ½Ð°"
-#define MSG_HOME                            "Home"  // Used as MSG_HOME " " MSG_X MSG_Y MSG_Z " " MSG_FIRST
-#define MSG_FIRST                           "first"
-#define MSG_ZPROBE_ZOFFSET                  "Z ÐžÑ‚Ñ�Ñ‚Ð¾Ñ�Ð½Ð¸Ðµ"
-#define MSG_BABYSTEP_X                      "ÐœÐ¸Ð½Ð¸Ñ�Ñ‚ÑŠÐ¿ÐºÐ° X"
-#define MSG_BABYSTEP_Y                      "ÐœÐ¸Ð½Ð¸Ñ�Ñ‚ÑŠÐ¿ÐºÐ° Y"
-#define MSG_BABYSTEP_Z                      "ÐœÐ¸Ð½Ð¸Ñ�Ñ‚ÑŠÐ¿ÐºÐ° Z"
-#define MSG_ENDSTOP_ABORT                   "Ð¡Ñ‚Ð¾Ð¿ ÐšÑ€.Ð˜Ð·ÐºÐ»ÑŽÑ‡Ð²Ð°Ñ‚ÐµÐ»Ð¸"
-#define MSG_DELTA_CALIBRATE                 "Ð”ÐµÐ»Ñ‚Ð° ÐšÐ°Ð»Ð¸Ð±Ñ€Ð¾Ð²ÐºÐ°"
-#define MSG_DELTA_CALIBRATE_X               "ÐšÐ°Ð»Ð¸Ð±Ñ€Ð¾Ð²ÐºÐ° X"
-#define MSG_DELTA_CALIBRATE_Y               "ÐšÐ°Ð»Ð¸Ð±Ñ€Ð¾Ð²ÐºÐ° Y"
-#define MSG_DELTA_CALIBRATE_Z               "ÐšÐ°Ð»Ð¸Ð±Ñ€Ð¾Ð²ÐºÐ° Z"
-#define MSG_DELTA_CALIBRATE_CENTER          "ÐšÐ°Ð»Ð¸Ð±Ñ€Ð¾Ð²ÐºÐ° Ð¦ÐµÐ½Ñ‚ÑŠÑ€"
+#define WELCOME_MSG                         MACHINE_NAME _UxGT(" Готов.")
+#define MSG_SD_INSERTED                     _UxGT("Картата е поставена")
+#define MSG_SD_REMOVED                      _UxGT("Картата е извадена")
+#define MSG_MAIN                            _UxGT("Меню")
+#define MSG_AUTOSTART                       _UxGT("Автостарт")
+#define MSG_DISABLE_STEPPERS                _UxGT("Изкл. двигатели")
+#define MSG_AUTO_HOME                       _UxGT("Паркиране")
+#define MSG_SET_HOME_OFFSETS                _UxGT("Задай Начало")
+#define MSG_SET_ORIGIN                      _UxGT("Изходна точка")
+#define MSG_PREHEAT_1                       _UxGT("Подгряване PLA")
+#define MSG_PREHEAT_1_N                     _UxGT("Подгряване PLA")
+#define MSG_PREHEAT_1_ALL                   _UxGT("Подгр. PLA Всички")
+#define MSG_PREHEAT_1_BEDONLY               _UxGT("Подгр. PLA Легло")
+#define MSG_PREHEAT_1_SETTINGS              _UxGT("Настройки PLA")
+#define MSG_PREHEAT_2                       _UxGT("Подгряване ABS")
+#define MSG_PREHEAT_2_N                     _UxGT("Подгряване ABS")
+#define MSG_PREHEAT_2_ALL                   _UxGT("Подгр. ABS Всички")
+#define MSG_PREHEAT_2_BEDONLY               _UxGT("Подгр. ABS Легло")
+#define MSG_PREHEAT_2_SETTINGS              _UxGT("Настройки ABS")
+#define MSG_COOLDOWN                        _UxGT("Охлаждане")
+#define MSG_SWITCH_PS_ON                    _UxGT("Вкл. захранване")
+#define MSG_SWITCH_PS_OFF                   _UxGT("Изкл. захранване")
+#define MSG_EXTRUDE                         _UxGT("Екструзия")
+#define MSG_RETRACT                         _UxGT("Откат")
+#define MSG_MOVE_AXIS                       _UxGT("Движение по ос")
+#define MSG_BED_LEVELING                    _UxGT("Нивелиране")
+#define MSG_LEVEL_BED                       _UxGT("Нивелиране")
+#define MSG_MOVE_X                          _UxGT("Движение по X")
+#define MSG_MOVE_Y                          _UxGT("Движение по Y")
+#define MSG_MOVE_Z                          _UxGT("Движение по Z")
+#define MSG_MOVE_E                          _UxGT("Екструдер")
+#define MSG_MOVE_01MM                       _UxGT("Премести с 0.1mm")
+#define MSG_MOVE_1MM                        _UxGT("Премести с 1mm")
+#define MSG_MOVE_10MM                       _UxGT("Премести с 10mm")
+#define MSG_SPEED                           _UxGT("Скорост")
+#define MSG_BED_Z                           _UxGT("Bed Z")
+#define MSG_NOZZLE                          LCD_STR_THERMOMETER _UxGT(" Дюза")
+#define MSG_BED                             LCD_STR_THERMOMETER _UxGT(" Легло")
+#define MSG_FAN_SPEED                       _UxGT("Вентилатор")
+#define MSG_FLOW                            _UxGT("Поток")
+#define MSG_CONTROL                         _UxGT("Управление")
+#define MSG_MIN                             LCD_STR_THERMOMETER _UxGT(" Минимум")
+#define MSG_MAX                             LCD_STR_THERMOMETER _UxGT(" Максимум")
+#define MSG_FACTOR                          LCD_STR_THERMOMETER _UxGT(" Фактор")
+#define MSG_AUTOTEMP                        _UxGT("Авто-темп.")
+#define MSG_ON                              _UxGT("Вкл. ")
+#define MSG_OFF                             _UxGT("Изкл. ")
+#define MSG_A_RETRACT                       _UxGT("A-откат")
+#define MSG_A_TRAVEL                        _UxGT("A-travel")
+#define MSG_STEPS_PER_MM                    _UxGT("Стъпки/mm")
+#define MSG_XSTEPS                          _UxGT("X стъпки/mm")
+#define MSG_YSTEPS                          _UxGT("Y стъпки/mm")
+#define MSG_ZSTEPS                          _UxGT("Z стъпки/mm")
+#define MSG_ESTEPS                          _UxGT("E стъпки/mm")
+#define MSG_E1STEPS                         _UxGT("E1 стъпки/mm")
+#define MSG_E2STEPS                         _UxGT("E2 стъпки/mm")
+#define MSG_E3STEPS                         _UxGT("E3 стъпки/mm")
+#define MSG_E4STEPS                         _UxGT("E4 стъпки/mm")
+#define MSG_E5STEPS                         _UxGT("E5 стъпки/mm")
+#define MSG_TEMPERATURE                     _UxGT("Температура")
+#define MSG_MOTION                          _UxGT("Движение")
+#define MSG_FILAMENT                        _UxGT("Нишка")
+#define MSG_VOLUMETRIC_ENABLED              _UxGT("E in mm3")
+#define MSG_FILAMENT_DIAM                   _UxGT("Диам. нишка")
+#define MSG_CONTRAST                        _UxGT("LCD контраст")
+#define MSG_STORE_EEPROM                    _UxGT("Запази в EPROM")
+#define MSG_LOAD_EEPROM                     _UxGT("Зареди от EPROM")
+#define MSG_RESTORE_FAILSAFE                _UxGT("Фабрични настройки")
+#define MSG_REFRESH                         LCD_STR_REFRESH _UxGT("Обнови")
+#define MSG_WATCH                           _UxGT("Преглед")
+#define MSG_PREPARE                         _UxGT("Действия")
+#define MSG_TUNE                            _UxGT("Настройка")
+#define MSG_PAUSE_PRINT                     _UxGT("Пауза")
+#define MSG_RESUME_PRINT                    _UxGT("Възобнови печата")
+#define MSG_STOP_PRINT                      _UxGT("Спри печата")
+#define MSG_CARD_MENU                       _UxGT("Меню карта")
+#define MSG_NO_CARD                         _UxGT("Няма карта")
+#define MSG_DWELL                           _UxGT("Почивка...")
+#define MSG_USERWAIT                        _UxGT("Изчакване")
+#define MSG_RESUMING                        _UxGT("Продълж. печата")
+#define MSG_PRINT_ABORTED                   _UxGT("Печатът е прекъснат")
+#define MSG_NO_MOVE                         _UxGT("Няма движение")
+#define MSG_KILLED                          _UxGT("УБИТО.")
+#define MSG_STOPPED                         _UxGT("СПРЯНО.")
+#define MSG_CONTROL_RETRACT                 _UxGT("Откат mm")
+#define MSG_CONTROL_RETRACT_SWAP            _UxGT("Смяна Откат mm")
+#define MSG_CONTROL_RETRACTF                _UxGT("Откат  V")
+#define MSG_CONTROL_RETRACT_ZLIFT           _UxGT("Скок mm")
+#define MSG_CONTROL_RETRACT_RECOVER         _UxGT("Възврат mm")
+#define MSG_CONTROL_RETRACT_RECOVER_SWAP    _UxGT("Смяна Възврат mm")
+#define MSG_CONTROL_RETRACT_RECOVERF        _UxGT("Възврат  V")
+#define MSG_AUTORETRACT                     _UxGT("Автоoткат")
+#define MSG_FILAMENTCHANGE                  _UxGT("Смяна нишка")
+#define MSG_INIT_SDCARD                     _UxGT("Иниц. SD-Карта")
+#define MSG_CNG_SDCARD                      _UxGT("Смяна SD-Карта")
+#define MSG_ZPROBE_OUT                      _UxGT("Z-сондата е извадена")
+#define MSG_ZPROBE_ZOFFSET                  _UxGT("Z Отстояние")
+#define MSG_BABYSTEP_X                      _UxGT("Министъпка X")
+#define MSG_BABYSTEP_Y                      _UxGT("Министъпка Y")
+#define MSG_BABYSTEP_Z                      _UxGT("Министъпка Z")
+#define MSG_ENDSTOP_ABORT                   _UxGT("Стоп Кр.Изключватели")
+#define MSG_DELTA_CALIBRATE                 _UxGT("Делта Калибровка")
+#define MSG_DELTA_CALIBRATE_X               _UxGT("Калибровка X")
+#define MSG_DELTA_CALIBRATE_Y               _UxGT("Калибровка Y")
+#define MSG_DELTA_CALIBRATE_Z               _UxGT("Калибровка Z")
+#define MSG_DELTA_CALIBRATE_CENTER          _UxGT("Калибровка Център")
 
 #endif // LANGUAGE_BG_H
-
