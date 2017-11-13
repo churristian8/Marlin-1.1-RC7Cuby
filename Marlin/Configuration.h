@@ -680,7 +680,7 @@
  *    (0,0)
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER -45  // X offset: -left  +right  [of the nozzle]
-#define Y_PROBE_OFFSET_FROM_EXTRUDER -20  // Y offset: -front +behind [the nozzle]
+#define Y_PROBE_OFFSET_FROM_EXTRUDER 20  // Y offset: -front +behind [the nozzle]
 #define Z_PROBE_OFFSET_FROM_EXTRUDER -5   // Z offset: -below +above  [the nozzle]
 
 // X and Y axis travel speed (mm/m) between probes
@@ -775,7 +775,7 @@
 
 // The size of the print bed
 #define X_BED_SIZE 220
-#define Y_BED_SIZE 220
+#define Y_BED_SIZE 240
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -877,8 +877,8 @@
   // Set the boundaries for probing (where the probe can reach).
   #define LEFT_PROBE_BED_POSITION 0
   #define RIGHT_PROBE_BED_POSITION 175
-  #define FRONT_PROBE_BED_POSITION 0
-  #define BACK_PROBE_BED_POSITION 175
+  #define FRONT_PROBE_BED_POSITION 20
+  #define BACK_PROBE_BED_POSITION 220
 
   // The Z probe minimum outer margin (to validate G29 parameters).
   #define MIN_PROBE_EDGE 10
