@@ -24,7 +24,7 @@
  * TEST
  *
  * LCD Menu Messages
- * See also https://github.com/MarlinFirmware/Marlin/wiki/LCD-Language
+ * See also http://marlinfw.org/docs/development/lcd_language.html
  *
  */
 #ifndef LANGUAGE_TEST_H
@@ -51,8 +51,6 @@
 //#define MAPPER_E382E383    // For Katakana
 //#define MAPPER_NON         // For direct ascii codes. Fall back mapper - if no other is defined.
 
-// Define SIMULATE_ROMFONT to see what is seen on the character based display defined in Configuration.h
-//#define SIMULATE_ROMFONT
 
 // Select the better font for full graphic displays.
 //#define DISPLAY_CHARSET_ISO10646_1
@@ -80,30 +78,30 @@
 
 #define STRG_C2_8 ""
 #define STRG_C2_9 ""
-#define STRG_C2_a "Â Â¡Â¢Â£Â¤Â¥Â¦Â§Â¨Â©ÂªÂ«Â¬Â­Â®Â¯"
-#define STRG_C2_b "Â°Â±Â²Â³Â´ÂµÂ¶Â·Â¸Â¹ÂºÂ»Â¼Â½Â¾Â¿"
-#define STRG_C3_8 "ÃˆÃ�Ã‚ÃƒÃ„Ã…Ã†Ã‡ÃˆÃ‰ÃŠÃ‹ÃŒÃ�ÃŽÃ�"
-#define STRG_C3_9 "Ã�Ã‘Ã’Ã“Ã”Ã•Ã–Ã—Ã˜Ã™ÃšÃ›ÃœÃ�ÃžÃŸ"
-#define STRG_C3_a "Ã Ã¡Ã¢Ã£Ã¤Ã¥Ã¦Ã§Ã¨Ã©ÃªÃ«Ã¬Ã­Ã®Ã¯"
-#define STRG_C3_b "Ã°Ã±Ã²Ã³Ã´ÃµÃ¶Ã·Ã¸Ã¹ÃºÃ»Ã¼Ã½Ã¾Ã¿"
+#define STRG_C2_a " ¡¢£¤¥¦§¨©ª«¬­®¯"
+#define STRG_C2_b "°±²³´µ¶·¸¹º»¼½¾¿"
+#define STRG_C3_8 "ÈÁÂÃÄÅÆÇÈÉÊËÌÍÎÏ"
+#define STRG_C3_9 "ÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß"
+#define STRG_C3_a "àáâãäåæçèéêëìíîï"
+#define STRG_C3_b "ðñòóôõö÷øùúûüýþÿ"
 
-#define STRG_D0_8 "Ð€Ð�Ð‚ÐƒÐ„Ð…Ð†Ð‡ÐˆÐ‰ÐŠÐ‹ÐŒÐ�ÐŽÐ�"
-#define STRG_D0_9 "Ð�Ð‘Ð’Ð“Ð”Ð•Ð–Ð—Ð˜Ð™ÐšÐ›ÐœÐ�ÐžÐŸ"
-#define STRG_D0_a "Ð Ð¡Ð¢Ð£Ð¤Ð¥Ð¦Ð§Ð¨Ð©ÐªÐ«Ð¬Ð­Ð®Ð¯"
-#define STRG_D0_b "Ð°Ð±Ð²Ð³Ð´ÐµÐ¶Ð·Ð¸Ð¹ÐºÐ»Ð¼Ð½Ð¾Ð¿"
-#define STRG_D1_8 "Ñ€Ñ�Ñ‚ÑƒÑ„Ñ…Ñ†Ñ‡ÑˆÑ‰ÑŠÑ‹ÑŒÑ�ÑŽÑ�"
-#define STRG_D1_9 "Ñ�Ñ‘Ñ’Ñ“Ñ”Ñ•Ñ–Ñ—Ñ˜Ñ™ÑšÑ›ÑœÑ�ÑžÑŸ"
-#define STRG_D1_a "Ñ Ñ¡Ñ¢Ñ£Ñ¤Ñ¥Ñ¦Ñ§Ñ¨Ñ©ÑªÑ«Ñ¬Ñ­Ñ®Ñ¯"
-#define STRG_D1_b "Ñ°Ñ±Ñ²Ñ³Ñ´ÑµÑ¶Ñ·Ñ¸Ñ¹ÑºÑ»Ñ¼Ñ½Ñ¾Ñ¿"
+#define STRG_D0_8 "ЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏ"
+#define STRG_D0_9 "АБВГДЕЖЗИЙКЛМНОП"
+#define STRG_D0_a "РСТУФХЦЧШЩЪЫЬЭЮЯ"
+#define STRG_D0_b "абвгдежзийклмноп"
+#define STRG_D1_8 "рстуфхцчшщъыьэюя"
+#define STRG_D1_9 "ѐёђѓєѕіїјљњћќѝўџ"
+#define STRG_D1_a "ѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯ"
+#define STRG_D1_b "ѰѱѲѳѴѵѶѷѸѹѺѻѼѽѾѿ"
 
-#define STRG_E382_8 "ã‚ˆã‚�ã‚‚ã‚ƒã‚„ã‚…ã‚†ã‚‡ã‚ˆã‚‰ã‚Šã‚‹ã‚Œã‚�ã‚Žã‚�"
-#define STRG_E382_9 "ã‚�ã‚‘ã‚’ã‚“ã‚”ã‚•ã‚–ã‚—ã‚˜ã‚™ã‚šã‚› ã‚œã‚�ã‚žã‚Ÿ"
-#define STRG_E382_a "ã‚ ã‚¡ã‚¢ã‚£ã‚¤ã‚¥ã‚¦ã‚§ã‚¨ã‚©ã‚ªã‚«ã‚¬ã‚­ã‚®ã‚¯"
-#define STRG_E382_b "ã‚°ã‚±ã‚²ã‚³ã‚´ã‚µã‚¶ã‚·ã‚¸ã‚¹ã‚ºã‚»ã‚¼ã‚½ã‚¾ã‚¿"
-#define STRG_E383_8 "ãƒˆãƒ�ãƒ‚ãƒƒãƒ„ãƒ…ãƒ†ãƒ‡ãƒˆãƒ‰ãƒŠãƒ‹ãƒŒãƒ�ãƒŽãƒ�"
-#define STRG_E383_9 "ãƒ�ãƒ‘ãƒ’ãƒ“ãƒ”ãƒ•ãƒ–ãƒ—ãƒ˜ãƒ™ãƒšãƒ›ãƒœãƒ�ãƒžãƒŸ"
-#define STRG_E383_a "ãƒ ãƒ¡ãƒ¢ãƒ£ãƒ¤ãƒ¥ãƒ¦ãƒ§ãƒ¨ãƒ©ãƒªãƒ«ãƒ¬ãƒ­ãƒ®ãƒ¯"
-#define STRG_E383_b "ãƒ°ãƒ±ãƒ²ãƒ³ãƒ´ãƒµãƒ¶ãƒ·ãƒ¸ãƒ¹ãƒºãƒ»ãƒ¼ãƒ½ãƒ¾ãƒ¿"
+#define STRG_E382_8 "よめもゃやゅゆょよらりるれろゎわ"
+#define STRG_E382_9 "ゐゑをんゔゕゖ゗゘゙゚゛ ゜ゝゞゟ"
+#define STRG_E382_a "゠ァアィイゥウェエォオカガキギク"
+#define STRG_E382_b "グケゲコゴサザシジスズセゼソゾタ"
+#define STRG_E383_8 "トチヂッツヅテデトドナニヌネノハ"
+#define STRG_E383_9 "バパヒビピフブプヘベペホボポマミ"
+#define STRG_E383_a "ムメモャヤュユョヨラリルレロヮワ"
+#define STRG_E383_b "ヰヱヲンヴヵヶヷヸヹヺ・ーヽヾヿ"
 
 #define STRG_OKTAL_0 "\000\001\002\003\004\005\006\007\010\011\012\013\014\015\016\017"
 #define STRG_OKTAL_1 "\020\021\022\023\024\025\026\027\030\031\032\033\034\035\036\037"
@@ -150,7 +148,7 @@
   #define MSG_MAIN                            STRG_OKTAL_2
   #define MSG_TEMPERATURE                     STRG_OKTAL_3
   #define MSG_MOTION                          STRG_OKTAL_4
-  #define MSG_VOLUMETRIC                      STRG_OKTAL_5
+  #define MSG_FILAMENT                        STRG_OKTAL_5
   #define MSG_CONTRAST                        STRG_OKTAL_6
   #define MSG_RESTORE_FAILSAFE                STRG_OKTAL_7
 
@@ -185,7 +183,7 @@
   #define MSG_MAIN                            STRG_OKTAL_2
   #define MSG_TEMPERATURE                     STRG_OKTAL_3
   #define MSG_MOTION                          STRG_OKTAL_4
-  #define MSG_VOLUMETRIC                      STRG_OKTAL_5
+  #define MSG_FILAMENT                        STRG_OKTAL_5
   #define MSG_CONTRAST                        STRG_OKTAL_6
   #define MSG_RESTORE_FAILSAFE                STRG_OKTAL_7
 
@@ -220,7 +218,7 @@
   #define MSG_MAIN                            STRG_OKTAL_2
   #define MSG_TEMPERATURE                     STRG_OKTAL_3
   #define MSG_MOTION                          STRG_OKTAL_4
-  #define MSG_VOLUMETRIC                      STRG_OKTAL_5
+  #define MSG_FILAMENT                        STRG_OKTAL_5
   #define MSG_CONTRAST                        STRG_OKTAL_6
   #define MSG_RESTORE_FAILSAFE                STRG_OKTAL_7
 
@@ -235,4 +233,3 @@
 #endif
 
 #endif // LANGUAGE_TEST_H
-
