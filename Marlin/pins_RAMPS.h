@@ -45,7 +45,7 @@
  */
 
 #if !defined(__AVR_ATmega1280__) && !defined(__AVR_ATmega2560__)
-  #error "Oops!  Make sure you have 'Arduino Mega' selected from the 'Tools -> Boards' menu."
+   #error "Oops!  Make sure you have 'Arduino Mega' selected from the 'Tools -> Boards' menu."
 #endif
 
 #ifndef BOARD_NAME
@@ -229,10 +229,10 @@
   #define RAMPS_D8_PIN      8
 #endif
 #ifndef RAMPS_D9_PIN
-  #define RAMPS_D9_PIN      10
+  #define RAMPS_D9_PIN     10
 #endif
 #ifndef RAMPS_D10_PIN
-  #define RAMPS_D10_PIN    9
+  #define RAMPS_D10_PIN     9
 #endif
 
 #define HEATER_0_PIN       RAMPS_D10_PIN

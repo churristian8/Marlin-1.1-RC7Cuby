@@ -41,27 +41,26 @@ bool GCodeParser::volumetric_enabled;
 #if ENABLED(TEMPERATURE_UNITS_SUPPORT)
   TempUnit GCodeParser::input_temp_units;
 #endif
-/*
+
 char *GCodeParser::command_ptr,
      *GCodeParser::string_arg,
      *GCodeParser::value_ptr;
 char GCodeParser::command_letter;
 int GCodeParser::codenum;
-*/
 #if USE_GCODE_SUBCODES
   uint8_t GCodeParser::subcode;
 #endif
 
 #if ENABLED(FASTER_GCODE_PARSER)
   // Optimized Parameters
-  //uint32_t GCodeParser::codebits;  // found bits
-  //uint8_t GCodeParser::param[26];  // parameter offsets from command_ptr
+  uint32_t GCodeParser::codebits;  // found bits
+  uint8_t GCodeParser::param[26];  // parameter offsets from command_ptr
 #else
-  //char *GCodeParser::command_args; // start of parameters
+  char *GCodeParser::command_args; // start of parameters
 #endif
 
 // Create a global instance of the GCode parser singleton
-//GCodeParser parser;
+GCodeParser parser;
 
 /**
  * Clear all code-seen (and value pointers)
@@ -69,7 +68,6 @@ int GCodeParser::codenum;
  * Since each param is set/cleared on seen codes,
  * this may be optimized by commenting out ZERO(param)
  */
- /**
 void GCodeParser::reset() {
   string_arg = NULL;                    // No whole line argument
   command_letter = '?';                 // No command letter
@@ -82,10 +80,9 @@ void GCodeParser::reset() {
     //ZERO(param);                      // No parameters (should be safe to comment out this line)
   #endif
 }
-*/
+
 // Populate all fields by parsing a single line of GCode
 // 58 bytes of SRAM are used to speed up seen/value
-/*
 void GCodeParser::parse(char *p) {
 
   reset(); // No codes to report
@@ -168,7 +165,7 @@ void GCodeParser::parse(char *p) {
    * The following loop assigns the first "parameter" having no numeric value to 'string_arg'.
    * This allows M0/M1 with expire time to work: "M0 S5 You Win!"
    * For 'M118' you must use 'E1' and 'A1' rather than just 'E' or 'A'
-   *//*
+   */
   string_arg = NULL;
   while (const char code = *p++) {                    // Get the next parameter. A NUL ends the loop
 
@@ -229,7 +226,8 @@ void GCodeParser::parse(char *p) {
       while (*p == ' ') p++;                    // Skip over all spaces
     }
   }
-}*/
+}
+
 #if ENABLED(CNC_COORDINATE_SYSTEMS)
 
   // Parse the next parameter as a new command
@@ -249,13 +247,13 @@ void GCodeParser::parse(char *p) {
   }
 
 #endif // CNC_COORDINATE_SYSTEMS
-/*
+
 void GCodeParser::unknown_command_error() {
   SERIAL_ECHO_START();
   SERIAL_ECHOPAIR(MSG_UNKNOWN_COMMAND, command_ptr);
   SERIAL_CHAR('"');
   SERIAL_EOL();
-}*/
+}
 
 #if ENABLED(DEBUG_GCODE_PARSER)
 
